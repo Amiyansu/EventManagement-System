@@ -1,0 +1,131 @@
+
+
+.registerngo {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-y: auto;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.15), rgba(0, 123, 255, 0.15));
+    padding: 20px;
+}
+
+.regngobox {
+    width: 80%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 2rem;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.fields {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.fields label {
+    flex: 0 0 100px; 
+    text-align: right;
+    margin-right: 20px;
+    font-weight: bold;
+}
+.fields input::placeholder,
+.fields textarea::placeholder {
+    color: #b3b3b3; 
+    opacity: 1;
+}
+
+.fields input,
+.fields textarea {
+    flex: 1;
+    min-width: calc(250px + 150px); 
+    padding: 0.75rem;
+    border: 1px solid rgba(133, 133, 133, 0.4); 
+    border-radius: 15px; 
+    outline: none;
+    color: #f28500; 
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.fields input:focus,
+.fields textarea:focus {
+    border-color: #006eff; 
+    box-shadow: 0 0 5px rgba(0, 110, 255, 0.3); 
+    background: rgba(255, 255, 255, 0.15); 
+}
+
+
+
+.button {
+    background: #006eff;
+    border: 1px solid #006eff;
+    color: #fff;
+    font-size: 1.25rem;
+    padding: 0.75rem 2rem;
+    margin: 0.5rem 0;
+    border-radius: 12px;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #0056cc;
+}
+
+#loglinkngo {
+    color: #006eff;
+    font-weight: bold;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.rightngoreg {
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 50px;
+    background-color: rgba(160, 255, 223, 0.3);
+    box-shadow: 0 0 10px 2px rgb(0, 211, 141);
+    border-radius: 50px;
+}
+
+.leftngoreg {
+    text-transform: capitalize;
+    color: navy;
+    align-items: center;
+    justify-items: center;
+}
+
+@media (max-width: 768px) {
+    .regngobox {
+        width: 95%;
+    }
+
+    .fields {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .fields label {
+        text-align: left;
+        margin-bottom: 10px;
+    }
+
+    .fields input,
+    .fields textarea {
+        width: 100%;
+    }
+}
+
+

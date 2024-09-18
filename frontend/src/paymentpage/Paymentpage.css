@@ -1,0 +1,70 @@
+
+.payment-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f9f9f9;
+}
+
+.payment-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 400px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.payment-header {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.payment-button, .toggle-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #020049;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.payment-button:hover, .toggle-button:hover {
+  background-color: #020080;
+  transform: scale(1.05);
+}
+
+.razorpay-section, .upi-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.upi-image {
+  max-width: 100%;
+  max-height: 80vh;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.toggle-switch {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.toggle-button {
+  margin: 0 10px;
+}
+
+.toggle-button.active {
+  background-color: #F37254;
+}

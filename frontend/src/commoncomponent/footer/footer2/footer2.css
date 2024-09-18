@@ -1,0 +1,24 @@
+footer2 .logo img {
+    height: 60px;
+    width: auto;
+}
+
+footer2 {
+    color: rgb(0, 51, 8);
+    width: 100%;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: rgb(227, 219, 204);
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+p {
+    flex-direction: initial;
+    margin-top: 20px;
+    font-size: small;
+}
+
